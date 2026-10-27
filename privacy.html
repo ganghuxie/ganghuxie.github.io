@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Personal-AI-Memory</title>
+  <meta name="description" content="Privacy policy for Personal-AI-Memory: how the app accesses, uses, stores, and does not share Google user data.">
+  <link rel="canonical" href="https://ganghuxie.github.io/privacy.html">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="index.html">Personal-AI-Memory</a>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="privacy.html" aria-current="page">Privacy Policy</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Personal-AI-Memory · Effective date: 2026-10-27</p>
+      <p class="langs">
+        <a href="#english">English</a>
+        <a href="#chinese">简体中文</a>
+      </p>
+
+      <article id="english" lang="en">
+        <p>This policy describes how Personal-AI-Memory accesses, uses, stores, and shares Google user data. The Google OAuth application name is Personal-AI-Memory. The desktop OAuth client is named PAM-rclone. The application is a personal, single-user desktop tool published by GitHub user ganghuxie. Its home page is <a href="https://ganghuxie.github.io/">https://ganghuxie.github.io/</a>.</p>
+
+        <dl class="summary">
+          <div>
+            <dt>Application</dt>
+            <dd>Personal-AI-Memory</dd>
+          </div>
+          <div>
+            <dt>Desktop client</dt>
+            <dd>PAM-rclone</dd>
+          </div>
+          <div>
+            <dt>Operator</dt>
+            <dd>GitHub user ganghuxie</dd>
+          </div>
+          <div>
+            <dt>Google scope</dt>
+            <dd><code>https://www.googleapis.com/auth/drive</code></dd>
+          </div>
+          <div>
+            <dt>Effective date</dt>
+            <dd>2026-10-27</dd>
+          </div>
+        </dl>
+
+        <h2>The application</h2>
+        <p>Personal-AI-Memory is intended for its owner to use on the owner’s own Windows computer, with the owner’s own Google Drive. rclone, running on that computer, uses the PAM-rclone desktop OAuth client to export Google Docs as Markdown into a local staging folder. The owner can later archive those files into a local Obsidian notes vault.</p>
+        <p>There is no Personal-AI-Memory account server. Authorizing the application does not create an account with the developer. If you authorize it, the Google data described below is handled on the computer where you run rclone.</p>
+
+        <h2>Google user data that is accessed</h2>
+        <p>When a Google account is connected, Personal-AI-Memory requests this OAuth scope:</p>
+        <p><code>https://www.googleapis.com/auth/drive</code></p>
+        <p>Google describes that scope as permission to see, edit, create, and delete all of your Google Drive files. With it, the application can view file metadata and file contents in the Google Drive of the account that grants access, and can download those files. The intended use is to find Google Docs and export them as Markdown.</p>
+        <p>Google also issues OAuth credentials for that connection, including an access token and a refresh token, so rclone can continue to call the Drive API from your computer.</p>
+        <p>Personal-AI-Memory does not request Gmail, Google Calendar, Google Contacts, or other Google products. It does not ask you to type a Google password into the application. Sign-in is Google’s own OAuth screen.</p>
+
+        <h2>How Google user data is used</h2>
+        <p>Google user data is used only to provide the local export you run yourself:</p>
+        <ul>
+          <li>Find Google Docs in your Google Drive.</li>
+          <li>Export those documents as Markdown.</li>
+          <li>Save the exported files in a staging folder on your computer.</li>
+          <li>Allow you to archive those files into your local Obsidian notes vault.</li>
+        </ul>
+        <p>The application does not use Google user data for advertising. It does not sell Google user data. It does not use Google user data, or data derived from it, to train artificial intelligence or machine learning models. It does not build advertising profiles from Google user data.</p>
+        <p>The granted Drive scope is broader than read-only export. rclone can use the token for the Drive commands you choose to run on your computer. Personal-AI-Memory does not operate a service that edits or deletes Drive files on its own.</p>
+
+        <h2>How Google user data is stored</h2>
+        <p>Processing stays on your computer.</p>
+        <ul>
+          <li>Exported Markdown, and any Drive file contents rclone downloads, are stored only on your computer. That means the local staging folder and, if you copy them there, your local Obsidian vault.</li>
+          <li>OAuth tokens are stored only in the local rclone configuration file on that computer.</li>
+          <li>Personal-AI-Memory does not upload Google user data to the developer.</li>
+          <li>Personal-AI-Memory does not send Google user data to a third-party server.</li>
+          <li>The developer does not keep a copy of your Drive files, document contents, or OAuth tokens.</li>
+        </ul>
+
+        <h2>How Google user data is shared</h2>
+        <p>Google user data is not shared.</p>
+        <ul>
+          <li>It is not shared with the developer.</li>
+          <li>It is not shared with third parties.</li>
+          <li>It is not sold, rented, or traded.</li>
+          <li>It is not used for advertising or marketing.</li>
+          <li>It is not sent to an analytics service, advertising network, or AI training service.</li>
+        </ul>
+        <p>The developer does not receive your Google user data and therefore has nothing to transfer. Only the person at the computer where rclone is running handles the exported files. No one else is given access to those files through this application.</p>
+
+        <h2>Limited Use</h2>
+        <div class="notice">
+          <p>Personal-AI-Memory’s use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+        </div>
+        <p>For this application, that means:</p>
+        <ul>
+          <li>Google user data is used only to provide the local Google Docs export described on the <a href="index.html">Personal-AI-Memory</a> home page.</li>
+          <li>Google user data is not transferred to the developer or to others. Files move only if you yourself copy them on your own computer.</li>
+          <li>Google user data is not used to serve advertisements.</li>
+          <li>The developer does not read your Google user data. Humans other than you are not given access to it through this application.</li>
+        </ul>
+
+        <h2>Retention and deletion</h2>
+        <ul>
+          <li>Exported files remain on your computer until you delete them. Delete the staging folder, and delete any copies you archived in your Obsidian vault, when you no longer want them.</li>
+          <li>OAuth tokens remain in the local rclone configuration file until you remove that rclone remote or delete the configuration file.</li>
+          <li>Revoking access in your Google Account stops further access. It does not erase Markdown files already saved on your computer. Delete those local files yourself if you want them gone.</li>
+          <li>The developer has no server copy of your Google user data to retain or to delete. A deletion request cannot return or erase a copy the developer never received. Local deletion is done by you, on your computer.</li>
+        </ul>
+
+        <h2>How to revoke access</h2>
+        <p>You can remove Personal-AI-Memory’s access to your Google Account at any time:</p>
+        <ol>
+          <li>Open <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</li>
+          <li>Find Personal-AI-Memory in the list of apps with access to your account. The desktop client name PAM-rclone may also be shown.</li>
+          <li>Remove access, or delete all connections you have with that app.</li>
+        </ol>
+        <p>You can also stop local use by removing the rclone remote or by deleting the local rclone configuration that holds the tokens.</p>
+
+        <h2>This website</h2>
+        <p>ganghuxie.github.io is a static site. It does not run analytics, does not use tracking scripts, does not set cookies, and has no forms. Visiting the home page or this privacy policy does not send personal information to the developer.</p>
+
+        <h2>Contact</h2>
+        <address>
+          <p>Contact the developer by opening a GitHub issue: <a href="https://github.com/ganghuxie/ganghuxie.github.io/issues">https://github.com/ganghuxie/ganghuxie.github.io/issues</a></p>
+        </address>
+        <p>Do not include OAuth tokens, rclone configuration, passwords, or private document contents in an issue.</p>
+
+        <h2>Changes</h2>
+        <p>This policy is effective on 2026-10-27. If it changes, the updated text will be posted on this page with a new effective date.</p>
+      </article>
+
+      <article id="chinese" class="translation" lang="zh-Hans">
+        <h2>隐私政策</h2>
+        <p class="meta">Personal-AI-Memory · 生效日期：2026-10-27</p>
+        <p>本政策说明 Personal-AI-Memory 如何访问、使用、存储和分享 Google 用户数据。Google OAuth 应用的名称是 Personal-AI-Memory。桌面 OAuth 客户端的名称是 PAM-rclone。本应用是 GitHub 用户 ganghuxie 发布的个人单用户桌面工具。主页是 <a href="https://ganghuxie.github.io/">https://ganghuxie.github.io/</a>。</p>
+
+        <dl class="summary">
+          <div>
+            <dt>应用</dt>
+            <dd>Personal-AI-Memory</dd>
+          </div>
+          <div>
+            <dt>桌面客户端</dt>
+            <dd>PAM-rclone</dd>
+          </div>
+          <div>
+            <dt>运营者</dt>
+            <dd>GitHub 用户 ganghuxie</dd>
+          </div>
+          <div>
+            <dt>Google 权限范围</dt>
+            <dd><code>https://www.googleapis.com/auth/drive</code></dd>
+          </div>
+          <div>
+            <dt>生效日期</dt>
+            <dd>2026-10-27</dd>
+          </div>
+        </dl>
+
+        <h2>关于本应用</h2>
+        <p>Personal-AI-Memory 供其所有者在自己的 Windows 电脑上使用，访问所有者自己的 Google 云端硬盘。运行在该电脑上的 rclone 使用 PAM-rclone 桌面 OAuth 客户端，将 Google 文档导出为 Markdown，保存到本机暂存文件夹。所有者之后可以把这些文件归档到本机的 Obsidian 笔记库。</p>
+        <p>Personal-AI-Memory 没有账号服务器。授权此应用不会在开发者处创建账号。如果你授权它，下面所述的 Google 数据只在你运行 rclone 的那台电脑上处理。</p>
+
+        <h2>访问的 Google 用户数据</h2>
+        <p>连接 Google 账号时，Personal-AI-Memory 请求以下 OAuth 权限范围：</p>
+        <p><code>https://www.googleapis.com/auth/drive</code></p>
+        <p>Google 对该权限范围的说明是：可以查看、编辑、创建和删除你的全部 Google 云端硬盘文件。据此，本应用可以查看授权账号的云端硬盘文件元数据和文件内容，并可以下载这些文件。预期用途是找到 Google 文档并将其导出为 Markdown。</p>
+        <p>Google 还会为该连接签发 OAuth 凭证，包括访问令牌和刷新令牌，以便 rclone 从你的电脑继续调用 Drive API。</p>
+        <p>Personal-AI-Memory 不请求 Gmail、Google 日历、Google 通讯录或其他 Google 产品。它不会要求你在应用中输入 Google 密码。登录使用的是 Google 自己的 OAuth 页面。</p>
+
+        <h2>如何使用 Google 用户数据</h2>
+        <p>Google 用户数据只用于提供由你在本地运行的导出功能：</p>
+        <ul>
+          <li>在你的 Google 云端硬盘中查找 Google 文档。</li>
+          <li>将这些文档导出为 Markdown。</li>
+          <li>把导出的文件保存到你电脑上的暂存文件夹。</li>
+          <li>由你自行把这些文件归档到本机的 Obsidian 笔记库。</li>
+        </ul>
+        <p>本应用不会将 Google 用户数据用于广告，不会出售 Google 用户数据，也不会把 Google 用户数据或其衍生数据用于训练人工智能或机器学习模型，不会用 Google 用户数据建立广告画像。</p>
+        <p>所授予的 Drive 权限范围宽于只读导出。rclone 可以把该令牌用于你在自己电脑上选择运行的 Drive 命令。Personal-AI-Memory 没有会自行编辑或删除云端硬盘文件的在线服务。</p>
+
+        <h2>如何存储 Google 用户数据</h2>
+        <p>处理过程留在你的电脑上。</p>
+        <ul>
+          <li>导出的 Markdown，以及 rclone 下载的云端硬盘文件内容，只保存在你的电脑上。也就是本机暂存文件夹，以及你若自行复制过去的本机 Obsidian 笔记库。</li>
+          <li>OAuth 令牌只保存在该电脑的 rclone 本地配置文件中。</li>
+          <li>Personal-AI-Memory 不会把 Google 用户数据上传给开发者。</li>
+          <li>Personal-AI-Memory 不会把 Google 用户数据发送到第三方服务器。</li>
+          <li>开发者不会保留你的云端硬盘文件、文档内容或 OAuth 令牌的副本。</li>
+        </ul>
+
+        <h2>如何分享 Google 用户数据</h2>
+        <p>Google 用户数据不会被分享。</p>
+        <ul>
+          <li>不会与开发者分享。</li>
+          <li>不会与第三方分享。</li>
+          <li>不会被出售、出租或交换。</li>
+          <li>不会用于广告或营销。</li>
+          <li>不会发送给分析服务、广告网络或人工智能训练服务。</li>
+        </ul>
+        <p>开发者不会收到你的 Google 用户数据，因此也没有可转移的内容。只有在运行 rclone 的那台电脑前的使用者会接触导出的文件。本应用不会把这些文件的访问权交给其他人。</p>
+
+        <h2>有限使用（Limited Use）</h2>
+        <div class="notice">
+          <p>Personal-AI-Memory 对从 Google API 接收的信息的使用，遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 服务用户数据政策</a>（Google API Services User Data Policy），包括有限使用（Limited Use）要求。</p>
+        </div>
+        <p>对本应用而言，这意味着：</p>
+        <ul>
+          <li>Google 用户数据只用于提供 <a href="index.html">Personal-AI-Memory</a> 主页所述的本地 Google 文档导出功能。</li>
+          <li>Google 用户数据不会转移给开发者或其他人。文件只会在你自己于自己的电脑上复制时移动。</li>
+          <li>Google 用户数据不会用于投放广告。</li>
+          <li>开发者不会阅读你的 Google 用户数据。本应用不会把该数据的访问权交给你以外的人。</li>
+        </ul>
+
+        <h2>保留与删除</h2>
+        <ul>
+          <li>导出的文件会留在你的电脑上，直到你删除它们。不再需要时，请删除暂存文件夹，并删除你归档到 Obsidian 笔记库中的副本。</li>
+          <li>OAuth 令牌会留在 rclone 本地配置文件中，直到你移除该 rclone remote，或删除该配置文件。</li>
+          <li>在 Google 账号中撤销访问后，后续访问会停止。这不会抹去已经保存在你电脑上的 Markdown 文件。如果你希望这些本地文件消失，请自行删除。</li>
+          <li>开发者没有你的 Google 用户数据的服务器副本可供保留或删除。删除请求无法交回或擦除开发者从未收到的副本。本地删除由你在自己的电脑上完成。</li>
+        </ul>
+
+        <h2>如何撤销访问</h2>
+        <p>你可以随时移除 Personal-AI-Memory 对你的 Google 账号的访问权限：</p>
+        <ol>
+          <li>打开 <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>。</li>
+          <li>在有权访问你账号的应用列表中找到 Personal-AI-Memory。桌面客户端名称 PAM-rclone 也可能一并显示。</li>
+          <li>移除访问权限，或删除你与该应用的全部连接。</li>
+        </ol>
+        <p>你也可以通过移除 rclone remote，或删除保存令牌的 rclone 本地配置，来停止本地使用。</p>
+
+        <h2>关于本网站</h2>
+        <p>ganghuxie.github.io 是一个静态网站。它不运行分析、不使用跟踪脚本、不设置 Cookie，也没有表单。访问主页或本隐私政策不会把个人信息发送给开发者。</p>
+
+        <h2>联系</h2>
+        <address>
+          <p>如需联系开发者，请提交 GitHub issue：<a href="https://github.com/ganghuxie/ganghuxie.github.io/issues">https://github.com/ganghuxie/ganghuxie.github.io/issues</a></p>
+        </address>
+        <p>请不要在 issue 中包含 OAuth 令牌、rclone 配置、密码或私人文档内容。</p>
+
+        <h2>政策变更</h2>
+        <p>本政策自 2026-10-27 起生效。若有变更，更新后的文本会发布在本页面上，并注明新的生效日期。</p>
+      </article>
+    </main>
+
+    <footer>
+      <p><a href="index.html">Personal-AI-Memory</a> · <a href="privacy.html">Privacy Policy</a> · <a href="https://github.com/ganghuxie/ganghuxie.github.io/issues">GitHub issues</a></p>
+      <p>Effective date: 2026-10-27</p>
+    </footer>
+  </div>
+</body>
+</html>
